@@ -1,0 +1,39 @@
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
