@@ -211,5 +211,6 @@ describe('GET /api/users/:username', () => {
   });
 });
 
-#  By following these above steps, we  should be able to verify that your backend is functioning correctly.
+
+#  By following these above steps, we  should be able to verify backend is functioning correctly.
 
