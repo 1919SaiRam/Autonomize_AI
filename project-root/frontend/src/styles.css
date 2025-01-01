@@ -1,4 +1,4 @@
-   /* Body styling */
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -11,14 +11,13 @@ body {
   flex-direction: column;
 }
 
-/* Heading styling */
+
 h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* Form container styling */
 form {
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@ form {
   margin-bottom: 20px;
 }
 
-/* Input styling */
+
 input {
   padding: 12px;
   font-size: 1rem;
@@ -42,7 +41,7 @@ input:focus {
   border-color: #0366d6;
 }
 
-/* Button styling */
+
 button {
   padding: 12px 18px;
   font-size: 1rem;
@@ -58,7 +57,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Error message styling */
 .error-message {
   color: red;
   font-size: 14px;
@@ -66,18 +64,18 @@ button:hover {
   text-align: center;
 }
 
-/* List styling for displaying followers */
+
 ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* List item styling */
+
 li {
   margin-bottom: 10px;
 }
 
-/* Link styling for followers/repositories */
+
 a {
   text-decoration: none;
   color: #0366d6;
@@ -88,10 +86,13 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Image styling for profile picture */
+
 img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
+} 
+
+
+

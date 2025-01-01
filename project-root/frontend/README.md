@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+#Here following as Frontend code structure :-
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project-root
+      Frontend 
+        Public
+          index.jsx
+        Src
+            Components 
+                Userfollowers.jsx
+                Userform.jsx
+                UserRepositories.jsx
+            Pages
+                FollowersList.jsx
+                RepositoryDetails.jsx
+            App.jsx
+            Index.jsx
+            Styles.css
+        .gitignore
+        pakage-lock.json
+        package.json
 
-## Available Scripts
 
-In the project directory, you can run:
+# The frontend code implemented as following requirement :-
 
-### `npm start`
+FRONTEND 
+Requirements: 
+1. An initial page with a input box that accepts a GitHub username and a submit/search button 
+2. On submit, show the list of repositories returned from above API (See image 1) for the username entered in the input box. Display some useful user info above the repository list. (Design not given in image1)
+3. Clicking on any of the repositories should take us to a page which shows description about that repository (See image 2) 
+4. Also on the repository list page near the user info, add a button / link that should lead to a page with followers of the current user. (Design not given, you are free to choose any simple design or you may follow a design similar to the repository list) 
+5. Clicking on any follower should display the repository list page of that user 6. Also there has to be a way to go back to the repository list page with the input box 
+Important Notes: 
+1. Use only React hooks to build the app. 
+2. You may use Redux or store everything in React, structure your code appropriately 3. For any images use owner.avatar_url 
+4. Don’t call the GitHub API again for any information you already have. Eg. Do not make 5. API call again in the repository details page. Do not make API call again to get 6. repositories or followers info for a user if that info has already been fetched earlier for 7. that user. 
+8. For the pages with design images given, try to style it as close as possible to the given 9. images in terms of layout and presentation but beautification is not important 10. Do not use any CSS/UI frameworks 
+11. You do not need to manage browser history i.e all the pages can be on the same url 12. Submit the code by pushing repository to GitHub or any hosting platform of your choice. 13. Maintaining a reasonable commit history is recommended. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Ref Image 1](image.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Ref Image 2](image-1.png)
 
-### `npm test`
+UI - Homepage 
+![UI](image-3.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+UI - render after search
+![UI - render after search](image-2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+UI - render after search ; when username is wrong input 
+![UI - render after search ; when username is wrong input](image-4.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

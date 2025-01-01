@@ -1,10 +1,15 @@
-import app from './app';
-import { connectToDatabase } from './database';
+import express from 'express';
+import { initializeDatabase, createUserTable } from './database';
 
-const port = 5000;
+const app = express();
 
-connectToDatabase().then(() => {
-  app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-  });
+// Initialize database connection and create table if it doesn't exist
+initializeDatabase();
+createUserTable();
+
+// Your other Express routes and middlewares...
+
+const PORT = 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
