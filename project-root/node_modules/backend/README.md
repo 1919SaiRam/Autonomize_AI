@@ -214,3 +214,7 @@ describe('GET /api/users/:username', () => {
 
 #  By following these above steps, we  should be able to verify backend is functioning correctly.
 
+
+
+# AUTOMIZE-AI backend deployment to Render
+![alt text](image-3.png)
