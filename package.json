@@ -1,0 +1,19 @@
+{
+  "name": "autonomize_ai",
+  "version": "1.0.0",
+  "description": "Github fetchinf user credentials....",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1919SaiRam/Autonomize_AI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1919SaiRam/Autonomize_AI/issues"
+  },
+  "homepage": "https://github.com/1919SaiRam/Autonomize_AI#readme"
+}
