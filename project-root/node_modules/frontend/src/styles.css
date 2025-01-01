@@ -1,39 +1,97 @@
-  body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  
-  input {
-    padding: 10px;
-    font-size: 1rem;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 10px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+   /* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
 
-  form {
-    margin-bottom: 20px;
-  }
-  
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: blue;
-  }
-  
+/* Heading styling */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form container styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 250px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0366d6;
+}
+
+/* Button styling */
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #0366d6;
+  color: white;
+  width: 270px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* List styling for displaying followers */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styling */
+li {
+  margin-bottom: 10px;
+}
+
+/* Link styling for followers/repositories */
+a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Image styling for profile picture */
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}

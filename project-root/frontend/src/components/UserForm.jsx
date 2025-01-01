@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
-const UserForm = ({ setUserData }) => {
+const UserForm = ({ fetchUserData }) => {
   const [username, setUsername] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!username) {
+      setError('Please enter a GitHub username');
+      return;
+    }
+    setError('');
     try {
-      const res = await axios.get(`/api/users/${username}`);
-      setUserData(res.data);  // Assuming the data returned is what you want to display
+      await fetchUserData(username);
     } catch (err) {
-      alert('User not found');
+      setError('User not found');
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Enter GitHub username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <button type="submit">Search</button>
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Enter GitHub username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <button type="submit">Search</button>
+      </div>
+      {error && <p className="error-message">{error}</p>}
     </form>
   );
 };

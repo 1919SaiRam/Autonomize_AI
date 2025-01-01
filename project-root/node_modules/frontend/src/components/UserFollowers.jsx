@@ -1,7 +1,8 @@
 import React from 'react';
 
 const UserFollowers = ({ followers }) => {
-  if (!followers) return null;
+  // Ensure followers is always an array
+  if (!Array.isArray(followers)) return null;
 
   return (
     <div>
@@ -9,7 +10,9 @@ const UserFollowers = ({ followers }) => {
       <ul>
         {followers.map((follower) => (
           <li key={follower.id}>
-            <a href={follower.html_url} target="_blank" rel="noopener noreferrer">{follower.login}</a>
+            <a href={follower.html_url} target="_blank" rel="noopener noreferrer">
+              {follower.login}
+            </a>
           </li>
         ))}
       </ul>

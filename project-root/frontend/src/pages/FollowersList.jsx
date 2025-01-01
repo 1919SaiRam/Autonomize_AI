@@ -1,4 +1,3 @@
-// src/pages/FollowersList.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -11,9 +10,15 @@ const FollowersList = () => {
     const fetchFollowers = async () => {
       try {
         const response = await axios.get(`https://api.github.com/users/${username}/followers`);
-        setFollowers(response.data);
+        // Check if the response is an array before updating state
+        if (Array.isArray(response.data)) {
+          setFollowers(response.data);
+        } else {
+          setFollowers([]);  // Set to empty array if the response is not as expected
+        }
       } catch (error) {
         console.error('Error fetching followers:', error);
+        setFollowers([]);  // Set to empty array on error
       }
     };
 

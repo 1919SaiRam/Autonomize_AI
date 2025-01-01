@@ -19,21 +19,24 @@ const UserRepositories = ({ username }) => {
     fetchRepositories();
   }, [username]);
 
+  if (loading) return <div>Loading...</div>;
+
   return (
     <div>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {repos.map((repo) => (
-            <li key={repo.id}>
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">{repo.name}</a>
-            </li>
-          ))}
-        </ul>
-      )}
+      <h2>{username}'s Repositories</h2>
+      <ul>
+        {repos.map((repo) => (
+          <li key={repo.id} style={{ marginBottom: '15px' }}>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 'bold' }}>
+              {repo.name}
+            </a>
+            <p>{repo.description}</p>
+            <p>⭐ {repo.stargazers_count} | 🍴 {repo.forks_count} | {repo.language}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default UserRepositories;
