@@ -171,7 +171,7 @@ You can also check if the data is being saved correctly to your database.
 
 Use a PostgreSQL client (like pgAdmin, DBeaver, or the terminal) to connect to your database and check if the tables are populated with the data you're testing with.
 
-# For example: - sql
+# For example: - sql ( By implemented as Relational data base is PostgreSQL.
 SELECT * FROM users;
 This will show the data in the users table.
 
