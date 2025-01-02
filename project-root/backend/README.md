@@ -3,9 +3,7 @@
 Project-root
 
     backend 
-    
         Src
-        
             controllers
                 userController.ts
             modals
