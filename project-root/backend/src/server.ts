@@ -7,7 +7,7 @@ const app = express();
 initializeDatabase();
 createUserTable();
 
-// Your other Express routes and middlewares...
+// other Express routes and middlewares...
 
 const PORT = 5000;
 app.listen(PORT, () => {
